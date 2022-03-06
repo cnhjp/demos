@@ -1,0 +1,11 @@
+.box {
+    display: inline-block;
+    margin: 0;
+}
+
+.box:nth-of-type(3n + 2), .box:nth-of-type(3n + 3) {
+    margin-left: -4px;
+}
+.box:nth-of-type(n + 4) {
+    margin-top: -4px;
+}

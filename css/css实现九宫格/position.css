@@ -1,0 +1,41 @@
+:root {
+    --box-width: 200px;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.box {
+    position: absolute;
+}
+
+.box-2 {
+    left: var(--box-width);
+}
+.box-3 {
+    right: 0;
+}
+.box-4 {
+    top: var(--box-width);
+}
+.box-5 {
+    left: var(--box-width);
+    top: var(--box-width);
+}
+.box-6 {
+    right: 0;
+    top: var(--box-width);
+}
+.box-7 {
+    left: 0;
+    bottom: 0;
+}
+.box-8 {
+    left: var(--box-width);
+    bottom: 0;
+}
+.box-9 {
+    right: 0;
+    bottom: 0;
+}
