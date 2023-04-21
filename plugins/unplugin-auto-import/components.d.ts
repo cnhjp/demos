@@ -12,5 +12,6 @@ declare module '@vue/runtime-core' {
     CompContent: typeof import('./src/components/CompContent.vue')['default']
     CompFooter: typeof import('./src/components/CompFooter.vue')['default']
     CompHeader: typeof import('./src/components/CompHeader.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
   }
 }

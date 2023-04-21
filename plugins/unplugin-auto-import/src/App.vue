@@ -5,7 +5,7 @@ const counter: Ref<number> = ref(0);
 <template>
   <CompHeader />
   <CompContent>
-    <button @click="counter++">count is: {{ counter }}</button>
+    <el-button @click="counter++">count is: {{ counter }}</el-button>
   </CompContent>
   <CompFooter />
 </template>

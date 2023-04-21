@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -74,6 +75,7 @@ export default defineConfig({
     // see https://github.com/antfu/unplugin-auto-import/pull/23/
     resolvers: [
       /* ... */
+      ElementPlusResolver(),
     ],
 
     // Inject the imports at the end of other imports
@@ -88,6 +90,9 @@ export default defineConfig({
     },
   }),
   Components({
+    resolvers: [
+      ElementPlusResolver()
+    ]
   })
   ]
 })
